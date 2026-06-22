@@ -15,3 +15,7 @@ hostname
 echo ""
 echo "[Current User]"
 whoami
+
+echo ""
+echo "[Network Information]"
+ip addr
