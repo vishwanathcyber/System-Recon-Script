@@ -26,13 +26,13 @@ A beginner cyberscurity project written in Bash that automates collection of Lin
  
     ## Roadmap
 
-    - []Learn Bash Basics
-    - []Collect OS Information
-    - []Enumerate Users
-    - []Collect Network Information
-    - []Detect Open Ports
-    - []Enumerate Running Processes
-    - []Generate Report
-    - []Add Screenshots
-    - []Final Documentation
+    - [ ] Learn Bash Basics
+    - [ ] Collect OS Information
+    - [ ] Enumerate Users
+    - [ ] Collect Network Information
+    - [ ] Detect Open Ports
+    - [ ] Enumerate Running Processes
+    - [ ] Generate Report
+    - [ ] Add Screenshots
+    - [ ] Final Documentation
   
