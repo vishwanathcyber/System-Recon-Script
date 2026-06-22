@@ -19,3 +19,17 @@ whoami
 echo ""
 echo "[Network Information]"
 ip addr
+
+echo ""
+echo "[Memory Information]
+free -h
+
+echo ""
+echo "[Memory Information]'
+free -h
+
+echo ""
+echo "[Disk Information]"
+df -h
+
+
