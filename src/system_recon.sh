@@ -36,4 +36,7 @@ echo ""
 echo "[System Uptime]
 uptime
 
+echo "
+echo "Recon Complete!"
+
 
