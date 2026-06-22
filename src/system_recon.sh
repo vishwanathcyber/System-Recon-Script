@@ -1,4 +1,13 @@
 #!/bin/bash
 
+echo "================================"
 echo "System Recon Script"
-echo "Project initialized"
+echo "================================"
+
+echo ""
+echo "[OS Information]"
+uname -a
+
+echo ""
+echo"[Current User]"
+whoami
