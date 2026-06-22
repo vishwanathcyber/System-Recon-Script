@@ -9,5 +9,5 @@ echo "[OS Information]"
 uname -a
 
 echo ""
-echo"[Current User]"
+echo "[Current User]"
 whoami
