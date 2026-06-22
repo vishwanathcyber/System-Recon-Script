@@ -25,11 +25,15 @@ echo "[Memory Information]
 free -h
 
 echo ""
-echo "[Memory Information]'
-free -h
-
-echo ""
 echo "[Disk Information]"
 df -h
+
+echo ""
+echo "[Running Processes]"
+ps aux | head -10
+
+echo ""
+echo "[System Uptime]
+uptime
 
 
