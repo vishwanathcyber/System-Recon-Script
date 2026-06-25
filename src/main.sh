@@ -1,42 +1,67 @@
 #!/bin/bash
 
-echo "================================"
-echo "System Recon Script"
-echo "================================"
+#
+# System Recon Script
+# Main Entry Point
+#
 
-echo ""
-echo "[OS Information]"
-uname -a
+# =============================
+# Load Utility Modules
+# =============================
 
-echo ""
-echo "[Hostname]"
-hostname
+source utils/logger.sh
+source utils/helpers.sh
+source utils/colors.sh
 
-echo ""
-echo "[Current User]"
-whoami
+# =============================
+# Load Collectors
+# =============================
 
-echo ""
-echo "[Network Information]"
-ip addr
+source collectors/cpu.sh
+source collectors/memory.sh
+source collectors/disk.sh
+source collectors/network.sh
+source collectors/user.sh
+source collectors/services.sh
 
-echo ""
-echo "[Memory Information]
-free -h
+# =============================
+# Load Analyzers
+# =============================
 
-echo ""
-echo "[Disk Information]"
-df -h
+source analyzers/firewall.sh
+source analyzers/ssh.sh
+source analyzers/risk.sh
 
-echo ""
-echo "[Running Processes]"
-ps aux | head -10
+# =============================
+# Start Scan
+# =============================
 
-echo ""
-echo "[System Uptime]
-uptime
+log_info "Starting System Recon Script..."
 
-echo "
-echo "Recon Complete!"
+print_separator
+
+collect_cpu_info
+
+collect_memory_info
+
+collect_disk_info
+
+collect_network_info
+
+collect_users_info
+
+collect_services_info
+
+print_separator
+
+analyze_firewall
+
+analyze_ssh
+
+calculate_risk
+
+print_separator
+
+log_success "Scan Completed Successfully."
 
 
