@@ -1,0 +1,23 @@
+Reports
+
+reports/
+
+Logs
+
+*.log
+
+Temporary Files
+
+*.tmp
+
+Backup Files
+
+*.bak
+
+macOS
+
+.DS_Store
+
+Windows
+
+Thumbs.db
